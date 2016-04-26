@@ -6,7 +6,9 @@ Release:	1
 License:	LGPL v2.1
 Group:		Libraries
 #Source0Download: https://gitlab.com/accounts-sso/accounts-qml-module/tags
-Source0:	https://gitlab.com/accounts-sso/accounts-qml-module/repository/archive.tar.gz?ref=VERSION_%{version}
+# TODO: in the future use fake GET arg to force sane filename on df
+#Source0:	https://gitlab.com/accounts-sso/accounts-qml-module/repository/archive.tar.bz2?ref=VERSION_%{version}&fake_out=/%{name}-%{version}.tar.bz2
+Source0:	archive.tar.gz%3Fref=VERSION_%{version}
 # Source0-md5:	d62f676e837bfa2b8bb5c12507a36ce9
 URL:		https://gitlab.com/accounts-sso/accounts-qml-module
 BuildRequires:	Qt5Qml-devel >= 5
