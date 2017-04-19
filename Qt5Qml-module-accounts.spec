@@ -1,17 +1,16 @@
 Summary:	Ubuntu OnlineAccounts QML API
 Summary(pl.UTF-8):	API języka QML do Ubuntu OnlineAccounts
 Name:		Qt5Qml-module-accounts
-Version:	0.6
-Release:	2
+Version:	0.7
+Release:	1
 License:	LGPL v2.1
 Group:		Libraries
 #Source0Download: https://gitlab.com/accounts-sso/accounts-qml-module/tags
-# TODO: in the future use fake GET arg to force sane filename on df
-#Source0:	https://gitlab.com/accounts-sso/accounts-qml-module/repository/archive.tar.bz2?ref=VERSION_%{version}&fake_out=/%{name}-%{version}.tar.bz2
-Source0:	archive.tar.gz%3Fref=VERSION_%{version}
-# Source0-md5:	d62f676e837bfa2b8bb5c12507a36ce9
+Source0:	https://gitlab.com/accounts-sso/accounts-qml-module/repository/archive.tar.bz2?ref=VERSION_%{version}&fake_out=/%{name}-%{version}.tar.bz2
+# Source0-md5:	633ae6f6c84f073d1e1bb978086e7dfd
 URL:		https://gitlab.com/accounts-sso/accounts-qml-module
 BuildRequires:	Qt5Qml-devel >= 5
+BuildRequires:	Qt5Test-devel >= 5
 BuildRequires:	doxygen
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	libaccounts-qt5-devel
@@ -44,7 +43,7 @@ QML API documentation for Ubuntu OnlineAccounts.
 Dokumentacja API QML Ubuntu OnlineAccounts.
 
 %prep
-%setup -q -n accounts-qml-module-VERSION_%{version}-45a153eb0f6c65ee7b0c347bce723acd821bbb00
+%setup -q -n accounts-qml-module-VERSION_%{version}-cfadea7ba8ba4011ae20d771696eb74deb87201e
 
 %build
 qmake-qt5 accounts-qml-module.pro \
