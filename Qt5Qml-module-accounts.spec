@@ -32,9 +32,7 @@ accounts-sso.
 Summary:	QML API documentation for Ubuntu OnlineAccounts
 Summary(pl.UTF-8):	Dokumentacja API QML Ubuntu OnlineAccounts
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 QML API documentation for Ubuntu OnlineAccounts.
