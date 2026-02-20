@@ -2,7 +2,7 @@ Summary:	Ubuntu OnlineAccounts QML API
 Summary(pl.UTF-8):	API języka QML do Ubuntu OnlineAccounts
 Name:		Qt5Qml-module-accounts
 Version:	0.7
-Release:	1
+Release:	2
 License:	LGPL v2.1
 Group:		Libraries
 #Source0Download: https://gitlab.com/accounts-sso/accounts-qml-module/tags
